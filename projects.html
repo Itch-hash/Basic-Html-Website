@@ -16,25 +16,31 @@
         content="Goal of this project is to teach me how to structure a website using HTML i.e. different sections of a website like header, footer, navigation, main content, sidebars etc. Do not style the website, only focus on the structure. Styling will be done in separate projects.">
 
     <title>Basic HTML Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div>
-        <p>Hesham Fekry</p>
-        <nav>
-            <ul>
-                <li><a href="/Basic HTML Website/index.html" rel="noopener noreferrer">Home</a></li>
-                <li><a href="/Basic HTML Website/projects.html" rel="noopener noreferrer">Projects</a></li>
-                <li><a href="/Basic HTML Website/articles.html" rel="noopener noreferrer">Articles</a></li>
-                <li><a href="/Basic HTML Website/contact.html" rel="noopener noreferrer">Contact</a></li>
+    <div class="nav">
+        <a href="/index.html">
+            <span>Hesham Fekry</span>
+            <nav>
+                <ul>
+                    <li><a href="/index.html" rel="noopener noreferrer">Home</a>
+                    </li>
+                    <li><a href="/projects.html" rel="noopener noreferrer">Projects
+                        </a></li>
+                    <li><a href="/articles.html" rel="noopener noreferrer">Articles
+                        </a></li>
+                    <li><a href="/contact.html" rel="noopener noreferrer">Contact
+                        </a></li>
 
-            </ul>
-        </nav>
+                </ul>
+            </nav>
     </div>
-
-    <div>
+    <h1 class="projects_main">Projects</h1>
+    <div class="projects">
         <main>
-            <h3>Projects</h3>
+
             <p>HTML Only Portfolio</p>
             <p>Calculator</p>
             <p>Quiz app</p>

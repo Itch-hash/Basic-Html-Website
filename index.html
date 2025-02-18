@@ -14,50 +14,65 @@
     <meta property="og:title" content="Basic HTML Website | Hesham Fekry">
     <meta property="og:description"
         content="Goal of this project is to teach me how to structure a website using HTML i.e. different sections of a website like header, footer, navigation, main content, sidebars etc. Do not style the website, only focus on the structure. Styling will be done in separate projects.">
-
+    <link rel="stylesheet" href="styles.css">
     <title>Basic HTML Website</title>
 </head>
 
 <body>
-    <div>
-        <p>Hesham Fekry</p>
-        <nav>
-            <ul>
-                <li><a href="/Basic HTML Website/index.html" rel="noopener noreferrer">Home</a></li>
-                <li><a href="/Basic HTML Website/projects.html" rel="noopener noreferrer">Projects</a></li>
-                <li><a href="/Basic HTML Website/articles.html" rel="noopener noreferrer">Articles</a></li>
-                <li><a href="/Basic HTML Website/contact.html" rel="noopener noreferrer">Contact</a></li>
+    <div class="nav">
+        <a href="/index.html">
+            <span>Hesham Fekry</span>
+            <nav>
+                <ul>
+                    <li><a href="/index.html" rel="noopener noreferrer">Home</a>
+                    </li>
+                    <li><a href="/projects.html" rel="noopener noreferrer">Projects
+                        </a></li>
+                    <li><a href="/articles.html" rel="noopener noreferrer">Articles
+                        </a></li>
+                    <li><a href="/contact.html" rel="noopener noreferrer">Contact
+                        </a></li>
 
-            </ul>
-        </nav>
+                </ul>
+            </nav>
     </div>
-    <h1>Frontend Developer</h1>
-    <div>
-        <aside>
+    <div class="hero">
+        <h1>Frontend Developer</h1>
+    </div>
+    <div class="main">
+
+        <div class="projects_aside">
             <h3>Projects</h3>
             <p>HTML Only Portfolio</p>
+            <hr>
             <p>Calculator</p>
+            <hr>
             <p>Quiz app</p>
+            <hr>
             <p>Countdown Timer</p>
+            <hr>
             <p>Product Upcoming Page</p>
-        </aside>
-    </div>
-    <div>
-        <section>
-            <h3>Work Experience</h3>
-            <p>roadmap.sh</p>
-            <p>Solved all frontend projects</p>
-            <a href="https://roadmap.sh/u/heshamfekry" target="_blank" rel="noopener noreferrer">Visit my Profile</a>
-        </section>
-        <section>
-            <h3>OpenSource Work</h3>
-            <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars</p>
-            <a href="https://github.com/Itch-hash" target="_blank" rel="noopener noreferrer">Visit my GitHub Profile</a>
-        </section>
+        </div>
 
-    </div>
-    <div>
-        <aside>
+        <div class="main_section">
+            <section>
+                <h3>Work Experience</h3>
+                <h4>roadmap.sh</h4>
+                <p>Solved all frontend projects</p>
+                <a href="https://roadmap.sh/u/heshamfekry" target="_blank" rel="noopener noreferrer">Visit my
+                    Profile</a>
+            </section>
+            <hr>
+            <section>
+                <h4>OpenSource Work</h4>
+                <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars</p>
+                <a href="https://github.com/Itch-hash" target="_blank" rel="noopener noreferrer">Visit my GitHub
+                    Profile</a>
+            </section>
+
+        </div>
+
+        <div class="education_aside">
             <h3>Education</h3>
             <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
             <span>Courses I took:</span>
@@ -72,25 +87,36 @@
                 <li>Distributed Database Systems</li>
                 <li>Discreet Mathematics</li>
             </ul>
-        </aside>
+        </div>
+
     </div>
-    <div>
-        <h4>Reviews from my Teachers</h4>
+    <h4 class="reviews_main">Reviews from my Teachers</h4>
+    <div class="reviews">
+
         <div>
             <div>
-                <p>John doe was a brilliant student; always stood out with his assignments.<br><i>Jane Doe<br>Asisstant
-                        Professor</i></p>
+                <p>John doe was a brilliant student; always stood out with his assignments.<br></p>
+                <p>Jane Doe<br>Asisstant
+                    Professor</p>
             </div>
         </div>
-        <p>John doe was a brilliant student; always stood out with his assignments.<br><i>Jane Doe<br>Asisstant
-                Professor</i></p>
+        <div>
+            <div>
+                <p>John doe was a brilliant student; always stood out with his assignments.<br></p>
+                <p>Jane Doe<br>Asisstant
+                    Professor</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>John doe was a brilliant student; always stood out with his assignments.<br></p>
+                <p>Jane Doe<br>Asisstant
+                    Professor</p>
+            </div>
+        </div>
     </div>
-    </div>
-    <p>John doe was a brilliant student; always stood out with his assignments.<br><i>Jane Doe<br>Asisstant
-            Professor</i></p>
-    </div>
-    </div>
-    </div>
+
+
     <div>
         <footer>
 

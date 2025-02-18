@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --background-color: black;
+  --primary-color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  font-family: "Roboto", serif;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  margin-bottom: 30px;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style-type: none;
+}
+
+.nav li {
+  padding-right: 10px;
+
+  text-decoration: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav a:hover {
+  color: red;
+}
+
+.nav li::after {
+  content: "";
+  background-color: red;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav li:hover::after {
+  width: 100%;
+}
+.nav span {
+  font-size: large;
+}
+@media (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav li {
+    padding-top: 10px;
+  }
+}
+.hero {
+  text-align: center;
+  padding: 4vh;
+  font-family: "Comic Neue", serif;
+  border-bottom: 2px solid;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3px 10px 50px 10px;
+}
+.projects_aside > * {
+  padding: 5px;
+}
+.projects_aside hr {
+  padding: 0px;
+}
+.main_section > * {
+  padding: 6px;
+}
+.main_section hr {
+  padding: 0px;
+}
+.main_section h4 {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.education_aside > * {
+  padding: 5px;
+}
+.education_aside ul {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.projects_aside,
+.main_section,
+.education_aside {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 11px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+.reviews_main {
+  margin-left: 25px;
+}
+
+.reviews {
+  display: flex;
+  gap: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  min-width: 300px;
+  flex-direction: row;
+}
+
+.reviews > * {
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 20px;
+  flex: 1;
+}
+
+/* .reviews > i {
+  padding: 2px;
+  padding-top: 5px;
+} */
+.reviews > div:nth-child(2) {
+  padding-top: 20px;
+}
+@media (max-width: 768px) {
+  .reviews {
+    flex-direction: column;
+  }
+}
+
+.projects_main {
+  margin-top: 5vw;
+  text-align: center;
+  margin-bottom: 10vw;
+}
+.projects {
+  margin-bottom: 11vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  font-size: x-large;
+  min-width: min-content;
+}
+main {
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 31px;
+  min-width: min-content;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 430px) {
+  footer {
+    margin-top: 30vw;
+  }
+  .projects {
+    margin-bottom: 39vw;
+    margin-top: 90px;
+  }
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15vh;
+}
+.articles-content {
+  border: 2px solid;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: min-content;
+  padding: 30px;
+  max-width: 50vh;
+}
+.articles-content h3 {
+  padding-bottom: 20px;
+}
+.articles-content p {
+  padding-top: 20px;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  max-width: 400px;
+  border: 1px solid;
+  border-radius: 20px;
+  margin-bottom: 13vw;
+  margin-top: 5vw;
+}
+
+.form-menu {
+  padding: 40px;
+}
+
+.form-menu input {
+  width: 300px;
+  padding: 6px;
+  border-radius: 20px;
+}
+
+.form-menu input:focus {
+  background-color: rgb(196, 196, 196);
+}
+
+.form-menu button {
+  width: 76px;
+  height: 43px;
+  border-radius: 20px;
+  transition: 0.5s ease;
+  will-change: transform;
+}
+.form-menu p {
+  padding: 7px;
+}
+#message {
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  max-height: 100px;
+  resize: vertical;
+  padding: 6px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+#message:focus {
+  background-color: rgb(196, 196, 196);
+}
+
+button:hover {
+  transform: scale(1.1);
+}
