@@ -240,6 +240,7 @@ form {
   width: 300px;
   padding: 6px;
   border-radius: 20px;
+  text-indent: 4px;
 }
 
 .form-menu input:focus {
@@ -265,6 +266,7 @@ form {
   padding: 6px;
   margin-bottom: 10px;
   border-radius: 20px;
+  text-indent: 6px;
 }
 #message:focus {
   background-color: rgb(196, 196, 196);
