@@ -6,4 +6,4 @@ This repo was pushed as a project being followed from roadmap.sh
 
 [Roadmap.sh-portfolio-website](https://roadmap.sh/projects/portfolio-website)
 
-Will later integrate a live website, so you don't have to remotely open it locally.
+You can check the website [here](https://basic-html-website-project.netlify.app/)
